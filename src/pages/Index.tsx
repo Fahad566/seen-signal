@@ -24,6 +24,17 @@ const PageContent = () => {
           ? 'أودو ERP، تكامل الزكاة والضريبة، المملكة العربية السعودية، المنشآت الصغيرة والمتوسطة، التحول الرقمي، الفوترة الإلكترونية، المحاسبة'
           : 'Odoo ERP, ZATCA integration, Saudi Arabia, SME, digital transformation, e-invoicing, accounting, websites'
         } />
+        {/* Open Graph tags for social previews */}
+        <meta property="og:title" content={lang === 'ar' ? 'سين سيجنالز | حلول رقمية للمنشآت السعودية' : 'Seen Signals | Digital Solutions for Saudi SMEs'} />
+        <meta property="og:description" content={lang === 'ar'
+          ? 'سين سيجنالز تساعد المنشآت السعودية على العمل بذكاء من خلال أنظمة أودو، تكامل الزكاة والضريبة، المواقع الإلكترونية، المحاسبة، والعمليات الرقمية.'
+          : 'Seen Signals helps Saudi SMEs run smarter through Odoo ERP, ZATCA integration, websites, accounting, and digital operations. Technology that works quietly, performs loudly.'
+        } />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/path/to/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@SeenSignalsSA" />
+        <meta name="twitter:image" content="/path/to/og-image.png" />
       </Helmet>
       
       <main className="relative">
